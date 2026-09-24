@@ -24,7 +24,7 @@ public class TaskController {
         for (int i = 0; i < tasks.size(); i++) {
             if (tasks.get(i).getId().equals(id)) {
                 tasks.get(i).setTitle(task.getTitle());
-                tasks.get(i).setStatus(task.getStatus());
+                tasks.get(i).setDone(task.isDone());
                 return tasks.get(i);
             }
         }

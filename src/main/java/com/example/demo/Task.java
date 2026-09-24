@@ -20,7 +20,7 @@ public class Task {
         return this.title;
     }
 
-    public boolean getStatus() {
+    public boolean isDone() {
         return this.done;
     }
     // Setter
@@ -30,8 +30,8 @@ public class Task {
     public void setId(String id) {
         this.id = id;
     }
-    public void setStatus(boolean status) {
-        this.done = status;
+    public void setDone(boolean done) {
+        this.done = done;
     }
 
     
