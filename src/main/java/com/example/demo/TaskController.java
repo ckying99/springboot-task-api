@@ -22,10 +22,10 @@ public class TaskController {
     @PutMapping("/tasks/{id}")
     public Task editTask(@PathVariable("id") String id, @RequestBody Task task) {
         for (int i = 0; i < tasks.size(); i++) {
-            Task task = 
-            if (tasks.get(i).getId().equals(id)){
-                tasks.get(i).setTitle(task.title);
-                break;
+            if (tasks.get(i).getId().equals(id)) {
+                tasks.get(i).setTitle(task.getTitle());
+                tasks.get(i).setStatus(task.getStatus());
+                return tasks.get(i);
             }
         }
         task.setId(id);
