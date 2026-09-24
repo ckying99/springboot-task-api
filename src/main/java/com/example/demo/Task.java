@@ -1,9 +1,9 @@
 package com.example.demo;
 
 public class Task {
-    String id;
-    String title;
-    boolean done;
+    private String id;
+    private String title;
+    private boolean done;
 	public Task() {}
 
 	public Task(String id, String title, boolean done){
