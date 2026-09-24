@@ -28,8 +28,6 @@ public class TaskController {
                 return tasks.get(i);
             }
         }
-        task.setId(id);
-        tasks.add(task);
         return task;
     }
     
